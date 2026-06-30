@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-background-base: #faf8ff;
+  --color-brand-primary: #004ac6;
+  --color-brand-accent: #0053db;
+  --color-surface-card: #ffffff;
+  --color-border-subtle: #c3c6d7;
+  --color-text-dark: #191b23;
+  --color-text-muted: #737686;
+  --color-text-soft: #434655;
+  --color-success-bg: #dcfce7;
+  --color-success-text: #15803d;
+  --color-danger-bg: #fee2e2;
+  --color-danger-text: #b91c1c;
+  --color-warning-bg: #fef3c7;
+  --color-warning-text: #b45309;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background-base);
+    color: var(--color-text-dark);
+  }
+}
+
+/* Custom scrollbars */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+/* Glass header effect */
+.glass-header {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Soft card shadow */
+.soft-shadow {
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.06), 0px 1px 2px rgba(0,0,0,0.04);
+}
+
